@@ -19,9 +19,6 @@ iOS平台，仿支付宝双击Home键进入后台后添加在Window层添加一�
 //应用将失去激活状态---单击Home键
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    
     //添加模糊效果
     [SecurityStrategy addBlurEffect];
 }
@@ -29,8 +26,6 @@ iOS平台，仿支付宝双击Home键进入后台后添加在Window层添加一�
 //应用将变为激活状态----应用返回前台
 - (void)applicationDidBecomeActive:(UIApplication *)application 
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
     //移除模糊效果
     [SecurityStrategy removeBlurEffect];
 }
