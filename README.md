@@ -9,24 +9,36 @@ iOS平台，仿支付宝双击Home键进入后台后添加在Window层添加一�
 使用方式：
 
 //添加模糊效果
+
 [SecurityStrategy addBlurEffect];
 
 //移除模糊效果
+
 [SecurityStrategy removeBlurEffect];
 
 //配合AppDelegate中的方法,可方便集成的项目当中
 
 //应用将失去激活状态---单击Home键
+
 - (void)applicationWillResignActive:(UIApplication *)application
+
 {
+
     //添加模糊效果
+
     [SecurityStrategy addBlurEffect];
+    
 }
 
 //应用将变为激活状态----应用返回前台
+
 - (void)applicationDidBecomeActive:(UIApplication *)application 
+
 {
+
     //移除模糊效果
+    
     [SecurityStrategy removeBlurEffect];
+    
 }
 
